@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agência Criativa Web</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a href="#home" class="logo" aria-label="Agência Criativa Web">
+<!-- Logo fictício: texto + desenho simples -->
+<svg width="40" height="40" viewBox="0 0 100 100" aria-hidden="true">
+<circle cx="30" cy="30" r="22" fill="var(--accent)" />
+<rect x="55" y="55" width="30" height="30" rx="6" fill="var(--muted)" />
+</svg>
+<span class="logo-text">Agência <strong>Criativa</strong> Web</span>
+</a>
+
+
+<button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menu">
+<span class="hamburger"></span>
+</button>
+
+
+<nav id="main-nav" class="main-nav" aria-label="Menu principal">
+<ul class="nav-list">
+<li><a href="#home">Home</a></li>
+<li><a href="#sobre">Sobre Nós</a></li>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#depoimentos">Depoimentos</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main>
+<!-- HOME / BANNER -->
+<section id="home" class="hero">
+<div class="container hero-grid">
+<div class="hero-text">
+<h1>Transformamos ideias em experiências digitais memoráveis</h1>
+<p>Design estratégico, desenvolvimento front-end moderno e branding sólido para sua marca crescer.</p>
+<a class="btn" href="#contato">Solicitar Proposta</a>
+</div>
+<div class="hero-media">
+<img src="images/hero-800.jpg"
+srcset="images/hero-480.jpg 480w, images/hero-800.jpg 800w, images/hero-1200.jpg 1200w"
+sizes="(max-width: 768px) 90vw, 50vw"
+alt="Equipe trabalhando em design digital" loading="lazy">
+</div>
+</section>
+
+
+<!-- SOBRE NÓS -->
+<section id="sobre" class="sobre container">
+<div class="sobre-inner">
+<h2>Sobre Nós</h2>
+<p>Na Agência Criativa Web oferecemos soluções personalizadas que unem estética, usabilidade e resultados. Valorizamos clareza, colaboração e inovação para construir produtos digitais que encantam usuários e geram valor para negócios.</p>
+<ul class="valores">
+<li><strong>Transparência</strong><span>Comunicação clara e prazos reais.</span></li>
+<li><strong>Qualidade</strong><span>Entregas com atenção aos detalhes.</span></li>
+<li><strong>Inovação</strong><span>Boas práticas e tendências aplicadas.</span></li>
+</ul>
+</div>
+</section>
+
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="servicos container">
+<h2>Serviços</h2>
+<p class="lead">Oferecemos um mix de serviços para transformar sua presença digital.</p>
+
+
+<div class="servicos-grid">
+<article class="servico-card">
+<h3>Design Gráfico</h3>
+<p>Identidade visual, materiais impressos e digitais com impacto.</p>
+</article>
+<article class="servico-card">
+<h3>Desenvolvimento Web</h3>
+<p>Sites responsivos, performáticos e acessíveis.</p>
+</article>
+<article class="servico-card">
+<h3>Branding</h3>
+<p>Construção e posicionamento de marcas memoráveis.</p>
+</article>
+<article class="servico-card">
+<h3>UX / UI</h3>
+<p>Pesquisas, prototipagem e design de interfaces eficazes.</p>
+</article>
+<article class="servico-card">
+<h3>SEO & Conteúdo</h3>
+<p>Estratégias para atrair tráfego qualificado e engajar audiências.</p>
+</article>
+<article class="servico-card">
+<h3>Manutenção</h3>
+<p>Suporte contínuo e melhorias iterativas.</p>
+</article>
+</div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<blockquote class="depoimento">
+<p>"A equipe entregou muito além do esperado — a nova identidade trouxe mais clientes."</p>
+<footer>— Marina Lopes, CEO Startup X</footer>
+</blockquote>
+
+
+<blockquote class="depoimento">
+<p>"Profissionais competentes e com ótimo senso estético. Recomendo!"</p>
+<footer>— João Silva, Diretor Marketing</footer>
+</blockquote>
+
+
+<blockquote class="depoimento">
+<p>"Projeto dentro do prazo e com comunicação impecável durante todo o processo."</p>
+<footer>— Lucas Pereira, E-commerce Y</footer>
+</blockquote>
+</div>
+</div>
+</section>
+
+
+<!-- CONTATO -->
+<section id="contato" class="contato container">
+<h2>Contato</h2>
+<div class="contato-grid">
+<div class="contato-info">
+<p><strong>Endereço:</strong> Av. Exemplo, 123 — São Paulo, SP</p>
+<p><strong>Telefone:</strong> (11) 98765-4321</p>
+<p><strong>E-mail:</strong> contato@agenciacriativaweb.com</p>
+
+
+<p class="nota">Atendemos por horário comercial e também por agendamento.</p>
+</div>
+
+
+<form class="contato-form" action="#" method="post" novalidate>
+<label for="nome">Nome</label>
+<input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+
+
+<label for="email">E-mail</label>
+<input id="email" name="email" type="email" placeholder="seu@exemplo.com" required>
+
+
+<label for="mensagem">Mensagem</label>
+<textarea id="mensagem" name="mensagem" rows="6" placeholder="Como podemos ajudar?" required></textarea>
+
+
+<button type="submit" class="btn">Enviar Mensagem</button>
+</form>
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container footer-inner">
+<p>© <span id="ano"></span> Agência Criativa Web — Todos os direitos reservados</p>
+<nav aria-label="Rodapé">
+<ul class="foot-links">
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+</nav>
+</div>
+</footer>
