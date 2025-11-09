@@ -1,0 +1,33 @@
+// =====================
+// LAYOUT GERAL
+// =====================
+
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid rgba($color-bg, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  &__inner {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.site-footer {
+  background: #06121a;
+  color: $color-muted;
+  padding: 1rem 0;
+
+  &__inner {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
