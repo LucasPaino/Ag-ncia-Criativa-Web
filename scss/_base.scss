@@ -1,0 +1,35 @@
+// =====================
+// BASE / RESET
+// =====================
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: $font-base;
+  background: linear-gradient(180deg, #f7fbfd 0%, #eef6fb 100%);
+  color: $color-bg;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: $radius;
+}
+
+h1 { line-height: 1.05; }
+h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+h3 { font-size: 1.125rem; }
+
+a:focus {
+  outline: 3px solid rgba($color-accent-2, 0.18);
+  outline-offset: 3px;
+}
