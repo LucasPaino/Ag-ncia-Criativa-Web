@@ -1,0 +1,224 @@
+/* ===============================
+   ARQUIVO COMPILADO - estilos.css
+   (gerado a partir dos SCSS partials)
+   =============================== */
+
+/* ---------- BASE / RESET ---------- */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(180deg, #f7fbfd 0%, #eef6fb 100%);
+  color: #0f1724;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+h1 {
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.125rem;
+}
+
+a:focus {
+  outline: 3px solid rgba(90, 168, 255, 0.18);
+  outline-offset: 3px;
+}
+
+/* ---------- BOTÕES ---------- */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  background: #6dd3b9;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.25s ease;
+}
+
+.btn:hover {
+  background: #5aa8ff;
+}
+
+/* ---------- HEADER ---------- */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid rgba(15, 23, 36, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.site-header__inner {
+  max-width: 1200px;
+  width: clamp(88%, 1200px, 1200px);
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  padding: 3rem 0;
+  background: linear-gradient(135deg, rgba(90, 168, 255, 0.06), rgba(109, 211, 185, 0.04));
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero__text h1 {
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+}
+
+.hero__text p {
+  color: #9fb0c8;
+  margin-bottom: 1rem;
+}
+
+/* ---------- SERVIÇOS ---------- */
+.servicos {
+  padding: 3rem 0;
+}
+
+.servicos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.servicos__card {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(10, 20, 30, 0.04);
+}
+
+/* ---------- SOBRE ---------- */
+.sobre {
+  padding: 3rem 0;
+}
+
+.sobre__valores {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sobre__valor {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  flex: 1 1 12rem;
+  min-width: 12rem;
+}
+
+.sobre__valor span {
+  display: block;
+  color: #9fb0c8;
+  margin-top: 0.5rem;
+}
+
+/* ---------- CONTATO ---------- */
+.contato {
+  padding: 3rem 0;
+}
+
+.contato__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+.contato__info,
+.contato__form {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.contato__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contato__form input,
+.contato__form textarea {
+  padding: 0.75rem;
+  border: 1px solid rgba(10, 20, 30, 0.06);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* ---------- FOOTER ---------- */
+.site-footer {
+  background: #06121a;
+  color: #9fb0c8;
+  padding: 1rem 0;
+}
+
+.site-footer__inner {
+  max-width: 1200px;
+  width: clamp(88%, 1200px, 1200px);
+  margin: 0 auto;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media (max-width: 1024px) {
+  .hero__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre__valores {
+    flex-direction: column;
+  }
+
+  .contato__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
